@@ -9,3 +9,21 @@
 img {
     max-width: 100%;
 }
+
+/* title */
+h1 {
+    color: rgb(215, 49, 124);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* content box */
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container :first-child {
+    text-align: center;
+}
