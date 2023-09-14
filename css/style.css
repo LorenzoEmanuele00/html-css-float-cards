@@ -24,6 +24,23 @@ h1 {
     margin: 0 auto;
 }
 
-.container :first-child {
+.container > p {
     text-align: center;
+    padding-bottom: 40px;
 }
+/* cards layout */
+.card {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 10px;
+    /* debug */
+    border: 2px solid black;
+    height: 50px;
+}
+
+clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
