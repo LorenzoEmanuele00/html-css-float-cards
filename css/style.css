@@ -8,6 +8,7 @@
 
 img {
     max-width: 100%;
+    height: 100px;
 }
 
 /* title */
@@ -28,19 +29,46 @@ h1 {
     text-align: center;
     padding-bottom: 40px;
 }
-/* cards layout */
-.card {
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 10px;
-    /* debug */
-    border: 2px solid black;
-    height: 50px;
-}
 
+/* cards layout */
 clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
+.card {
+    float: left;
+    width: calc(100% / 3);
+    padding: 20px 10px;
+}
+
+/* card content */
+.content {
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    /* shadow */
+    box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 5px #000000;
+}
+
+.content > img {
+    float: left;
+}
+
+.job,
+.email,
+h3 {
+    padding-left: 115px;
+    padding-top: 8px;
+}
+
+.email {
+    color: rgb(0, 183, 255);    
+}
+
+/* hover email underline */
+.email:hover{
+    text-decoration:underline;
+}
