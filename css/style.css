@@ -57,18 +57,23 @@ clearfix::after {
     float: left;
 }
 
-.job,
-.email,
-h3 {
+.content > div{
     padding-left: 115px;
-    padding-top: 8px;
 }
 
-.email {
+.email{ 
+    display: block;
     color: rgb(0, 183, 255);    
 }
 
-/* hover email underline */
+h3,
+.job,
+.email {
+    padding-top: 8px;
+}
+
+/* hover email underline and color*/
 .email:hover{
     text-decoration:underline;
 }
+
